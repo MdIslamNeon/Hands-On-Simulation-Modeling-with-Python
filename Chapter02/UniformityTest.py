@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
+
 a = 75
 c = 0
 m = 2**(31) -1
@@ -23,7 +25,8 @@ for i in range(0,20):
 print("R = ",counts)
 print("V = ", V)
 
-import matplotlib.pyplot as plt
 Ypos = np.arange(len(counts))
 
 plt.bar(Ypos,counts)
+
+plt.show()
